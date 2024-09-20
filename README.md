@@ -1,10 +1,11 @@
 University Text Processing System
+
 Overview
 This project implements a Natural Language Processing (NLP) system that analyzes and processes textual data. The system loads text data from a CSV file, performs various NLP tasks (tokenization, stopword removal, stemming, lemmatization, part-of-speech tagging), and produces a frequency analysis of the most commonly used words. A bar graph is plotted to visualize the 15 most frequent words in the text data.
 
+Features--
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Features--
 The system includes the following NLP tasks:
 
 Tokenization:
@@ -27,26 +28,20 @@ A frequency dictionary is created, counting the occurrences of each word after p
 
 Data Visualization
 The 15 most frequent words are visualized using a bar graph.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 How to Run--
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Clone or Download the Repository: Ensure you have the CSV file nlp_data.csv containing the text data in the same directory as the Python script.
 
 Install Dependencies: Install the required libraries using pip:
 pip install pandas nltk matplotlib
 
-Download NLTK Resources: Run the following code in your script to download necessary NLTK data resources (you only need to do this once):
-import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('wordnet')
-
 Run the Script: Run the Python script that contains the code using the following command:
 python nlp_script.py
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Output:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1)The script will display word-tokenized sentences, lists of words after stopword removal, stemming, lemmatization, and POS tagging.
 2)It will also print a list of the 30 most frequent words and their frequencies.
